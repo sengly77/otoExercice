@@ -1,0 +1,410 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background: white;
+    font-family: consolas;
+
+}
+
+nav
+{
+    margin-bottom: 3%;
+}
+
+a.add
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+    border: 1px solid #2196f3;
+
+}
+
+a.add:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.5s;
+}
+
+a.add span
+{
+    position: absolute;
+    display: block;
+}
+
+a.add span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+a.add:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+
+a.add span:nth-child(3)
+{
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+a.add:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+a.add span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+a.add:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.12s;
+}
+
+a.add span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+a.add:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.32s;
+}
+
+/*
+    EDIT BUTTON
+*/
+
+
+a.edit
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0cb209;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+    border: 1px solid #0cb209;
+
+}
+
+a.edit:hover
+{
+    color: #0cb209;
+    background: #78e176;
+    box-shadow: 0 0 10px #78e176, 0 0 40px #78e176, 0 0 80px #78e176;
+    transition-delay: 0.5s;
+}
+
+a.edit span
+{
+    position: absolute;
+    display: block;
+}
+
+a.edit span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#78e176);
+}
+
+a.edit:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+
+a.edit span:nth-child(3)
+{
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#78e176);
+}
+
+a.edit:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+a.edit span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#78e176);
+}
+
+a.edit:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.12s;
+}
+
+a.edit span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#78e176);
+}
+
+a.edit:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.32s;
+}
+
+
+/*
+     SHOW
+*/
+
+
+a.show
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:  #deb933;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+    border: 1px solid #deb933;
+
+}
+
+a.show:hover
+{
+    color:  #deb933;
+    background: #f7e49e;
+    box-shadow: 0 0 10px  #ffe586, 0 0 40px  #ffe586, 0 0 80px  #ffe586;
+    transition-delay: 0.5s;
+}
+
+a.show span
+{
+    position: absolute;
+    display: block;
+}
+
+a.show span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ffe586);
+}
+
+a.show:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+
+a.show span:nth-child(3)
+{
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ffe586);
+}
+
+a.show:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+a.show span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ffe586);
+}
+
+a.show:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.12s;
+}
+
+a.show span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ffe586);
+}
+
+a.show:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.32s;
+}
+
+
+/**
+    DELETE
+ */
+
+
+a.delete
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fb2e00;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.1s;
+    border: 1px solid #fb2e00;
+
+}
+
+a.delete:hover
+{
+    color: #fb2e00;
+    background: #f68a72;
+    box-shadow: 0 0 10px   #f68a72, 0 0 40px   #f68a72, 0 0 80px   #f68a72;
+    transition-delay: 0.5s;
+}
+
+a.delete span
+{
+    position: absolute;
+    display: block;
+}
+
+a.delete span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ffe586);
+}
+
+a.delete:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 0.5s;
+}
+
+a.delete span:nth-child(3)
+{
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ffe586);
+}
+
+a.delete:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+
+a.delete span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ffe586);
+}
+
+a.delete:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 0.5s;
+    transition-delay: 0.12s;
+}
+
+a.delete span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ffe586);
+}
+
+a.delete:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 0.5s;
+    transition-delay: 0.32s;
+}
+
+
+
+
+
+

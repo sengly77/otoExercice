@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <a class="add" href="{{ path('add') }}">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Ajouter un nouvelle Utilisateur
+    </a>
+    {% for unepersonne in lespersonnes  %}
+
+        <p><strong>Nom:</strong> {{ unepersonne.nom }}</p>
+        <p><strong>Prenom:</strong> {{ unepersonne.prenom }}</p>
+         <p><strong>Age:</strong> {{ unepersonne.age }}</p>
+
+
+
+        <a class="edit" href="{{ path('edit', {'id': unepersonne.id}) }}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Modifier
+        </a>
+
+        <a class="show" href="{{ path('show', {'id': unepersonne.id}) }}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Voir fiche personnelle
+        </a>
+
+        <a class="delete" href="{{ path('delete', {'id': unepersonne.id}) }}">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Supprimer
+        </a>
+
+        <hr>
+
+    {% endfor %}
+    <div class="pagination">
+        {{ knp_pagination_render(lespersonnes) }}
+    </div>
+{% endblock %}

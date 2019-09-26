@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="row">
+    <div class="container">
+        <h1>Bonjour,</h1>
+        <p><strong>Nom:</strong> {{personne.nom}}</p>
+        <p><strong>Prenom:</strong> {{personne.prenom}}</p>
+        <p><strong>Age:</strong> {{ personne.age }}</p>
+
+    </div>
+</div>
+
+    <a class="edit" href="{{ path('home') }}" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Retour
+    </a>
+
+{% endblock %}
